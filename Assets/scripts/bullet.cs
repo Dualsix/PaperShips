@@ -26,9 +26,9 @@ public class bullet : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftControl) && shoot)
             {
-                GameObject aux = Instantiate(ball, transform.position, Quaternion.identity);
-                //aux.GetComponent<destroyByTime>().temps = 2;
-                aux.GetComponent<Rigidbody>().AddForce(new Vector3(1.0f, 1.0f, 0.0f) * strenght, ForceMode.Impulse);
+                GameObject aux = Instantiate(ball, new Vector3 (transform.position.x, transform.position.y, 1.0f), Quaternion.identity);
+                aux.gameObject.tag = "ball_p1";
+                aux.GetComponent<Rigidbody2D>().AddForce(new Vector3(1.0f, 1.0f, 0.0f) * strenght, ForceMode2D.Impulse);
                 timer = 0;
                 shoot = false;
             }
@@ -38,9 +38,9 @@ public class bullet : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.RightControl) && shoot)
             {
-                GameObject aux = Instantiate(ball, transform.position, Quaternion.identity);
-                //aux.GetComponent<destroyByTime>().temps = 2;
-                aux.GetComponent<Rigidbody>().AddForce(new Vector3(-1.0f, 1.0f, 0.0f) * strenght, ForceMode.Impulse);
+                GameObject aux = Instantiate(ball, new Vector3 (transform.position.x, transform.position.y, 1.0f), Quaternion.identity);
+                aux.gameObject.tag = "ball_p2";
+                aux.GetComponent<Rigidbody2D>().AddForce(new Vector3(-1.0f, 1.0f, 0.0f) * strenght, ForceMode2D.Impulse);
                 timer = 0;
                 shoot = false;
             }
@@ -51,7 +51,7 @@ public class bullet : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= 0.5)
+        if (timer >= 1)
         {
             shoot = true;
         }

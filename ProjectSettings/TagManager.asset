@@ -8,6 +8,10 @@ TagManager:
   - P1
   - bullet
   - line_p1
+  - ballon_p1
+  - ballon_p2
+  - ball_p1
+  - ball_p2
   layers:
   - Default
   - TransparentFX

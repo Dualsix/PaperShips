@@ -61,9 +61,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\arc.cs" />
+    <Compile Include="Assets\scripts\birds.cs" />
     <Compile Include="Assets\scripts\bullet.cs" />
+    <Compile Include="Assets\scripts\destroyByContact.cs" />
     <Compile Include="Assets\scripts\destroyByTime.cs" />
     <Compile Include="Assets\scripts\move.cs" />
+    <Compile Include="Assets\scripts\respawn_birds.cs" />
+    <Compile Include="Assets\scripts\rocket.cs" />
     <Compile Include="Assets\scripts\scroll.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/unity/Paper ship/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

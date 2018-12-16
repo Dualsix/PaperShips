@@ -19,6 +19,6 @@ public class scroll : MonoBehaviour
     private void FixedUpdate()
     {
         //scroll del fondo
-        transform.position = transform.position + new Vector3(0.0f, -0.1f, 0.0f);
+        transform.position = transform.position + new Vector3(0.0f, -0.2f, 0.0f);
     }
 }
