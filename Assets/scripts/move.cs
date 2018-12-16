@@ -33,9 +33,10 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //conseguimos el ancho y alto de la pantalla
         float height = 2f * Camera.main.orthographicSize;
         float width = height * Camera.main.aspect;
-        Debug.Log(Camera.main.transform.position.x);
+
         //bloquear movs P1
         if (gameObject.tag == "P1")
         {

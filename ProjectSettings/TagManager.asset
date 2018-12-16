@@ -6,6 +6,8 @@ TagManager:
   tags:
   - P2
   - P1
+  - bullet
+  - line_p1
   layers:
   - Default
   - TransparentFX

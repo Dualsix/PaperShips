@@ -60,6 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\arc.cs" />
+    <Compile Include="Assets\scripts\bullet.cs" />
+    <Compile Include="Assets\scripts\destroyByTime.cs" />
     <Compile Include="Assets\scripts\move.cs" />
     <Compile Include="Assets\scripts\scroll.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
